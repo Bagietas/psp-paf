@@ -21,7 +21,7 @@ target_link_libraries(name PRIVATE
 
 ## Samples
 You can currently only find one sample:
-- xmb-category, it adds new category to XMB although populated items are not usuable in any way as I couldn't figure out any clean, native way to do it (feel free to open the PR)
+- xmb-category, it adds "debug" text and new category to XMB although populated items are not usuable in any way as I couldn't figure out any clean, native way to do it (feel free to open the PR)
 ### ![XMB category sample](imgs/xmb-category.png)
 
 ## Contributing
