@@ -1,0 +1,52 @@
+	.set noreorder
+	
+#include "pspstub.s"
+
+	STUB_START "scePaf",0x00090011,0x002E0005
+    STUB_FUNC   0x3874A5F8,_ZNK3paf4View9GetStringEPKc
+    STUB_FUNC   0x5A6CAFE2,_ZN3paf4View4FindEPKc
+    STUB_FUNC   0x0A270BBC,_ZN3paf6PhTextC1EPNS_8PhWidgetEPNS_8PhAppearE
+    STUB_FUNC   0xB94AD2A4,_ZNK3paf4View10FindWidgetEPKc
+    STUB_FUNC   0x4AF28AF7,_ZN3paf8PhWidget14SetPos_ontimerERK4vec4PS0_
+    STUB_FUNC   0x67FF4EBC,_ZN3paf8PhWidget13UpdateCamerasEv
+    STUB_FUNC   0x2C0F0975,_ZN3paf9PhHandler11KillTimerCBEi
+    STUB_FUNC   0x553611FA,_ZN3paf6PhText7SetSizeEfff
+    STUB_FUNC   0x7869A05E,_ZN3paf7PhXmBar10SetListNumEi
+    STUB_FUNC   0x23A245C3,_ZNK3paf4View10GetTextureEPKc
+    STUB_FUNC   0xE219FD72,_ZN3paf8PhXmList10SetItemNumEi
+    STUB_FUNC   0x20677569,_ZN3paf6PhText12SetFontStyleERKNS_11PhFontStyleE
+    STUB_FUNC   0x6EB9F3B5,_ZN3paf6PhText7AddAttrENS_14PhTextAttrTypeEjj
+    STUB_FUNC   0x675047B1,_ZNK3paf4View12GetInterfaceEi
+    STUB_FUNC   0x777E5AC9,_ZN3paf5Image7OpenGIMEPvj
+    STUB_FUNC   0x8EDF4126,_ZN3paf5Image8ToBufferEb
+    STUB_FUNC   0xAD454A8F,_ZN3paf7SurfacenwEj
+    STUB_FUNC   0x3F65FC71,_ZN3paf7SurfaceC1EPNS_11SurfacePoolEii9ImageMode10ImageOrderbi
+    STUB_FUNC   0xDDE74F3B,_ZNK3paf11SurfaceBase13PixelsToBytesEi
+    STUB_FUNC   0xE9570AA3,_ZN3paf7Surface4CopyEiPKv10ImageOrderi
+    STUB_FUNC   0xF09010AF,_ZN3paf5Image12ToCLUTBufferEb
+    STUB_FUNC   0xB03CB9A0,_ZN3paf11SurfaceCLUTnwEj
+    STUB_FUNC   0xA69A5266,_ZN3paf11SurfaceCLUTC1EPNS_11SurfacePoolE9ImageModei
+    STUB_FUNC   0x6195CF7C,_ZN3paf11SurfaceCLUT4CopyEPv
+    STUB_FUNC   0xA9645067,_ZN3paf7Surface10AttachCLUTERKNS_12SurfaceRCPtrINS_11SurfaceCLUTEEE
+    STUB_FUNC   0xAB0731F2,_ZN3paf5ImageD1Ev
+    STUB_FUNC   0xF207376F,_ZN3paf7PhXmBar7CloseUpEiibbff
+    STUB_FUNC   0x72B16452,_ZN3paf7PhXmBar13SetFocusIndexEii
+    STUB_FUNC   0x7364C1F7,_ZN3paf7PhXmBar6RedrawEii
+    STUB_FUNC   0x9D93A13C,_ZN3paf7PhXmBar19GetFocusedItemIndexEi
+    STUB_FUNC   0x5E9078F9,_ZN3paf9PhHandler11SetCallBackEiPFvPNS_8PhWidgetEPNS_7PhEventEPvES5_
+    STUB_FUNC   0x3E22B04E,_ZN3paf7PhXmBar10DeleteItemEiif
+    STUB_FUNC   0x6FBEAC03,_ZN3paf7PhXmBar11UpdateItemsEi
+    STUB_FUNC   0xA538B603,Heap_QueryInfo
+    STUB_FUNC   0x28288D63,PAF_Resource_DOMGetNodeTable
+    STUB_FUNC   0x7FB1D19C,PAF_Resource_DOMGetNodeFirstChild
+    STUB_FUNC   0xB4652CFE,paf_memcpy
+    STUB_FUNC   0x4CF09BA2,sce_paf_private_strcmp
+    STUB_FUNC   0xD68F2EAA,sce_paf_private_vsnprintf
+    STUB_FUNC   0xA138A376,sce_paf_private_sprintf
+    STUB_FUNC   0x5E909060,sce_paf_private_malloc
+    STUB_FUNC   0x412B2F09,sce_paf_private_free
+    STUB_FUNC   0x77ADEAEB,sce_paf_private_malloc2
+    STUB_FUNC   0x9AF12ADC,sce_paf_private_free2
+    STUB_FUNC   0xAF067FA2,sce_paf_private_wcslen
+    STUB_FUNC   0xD7DCB972,sce_paf_private_strlen
+	STUB_END

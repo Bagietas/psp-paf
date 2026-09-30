@@ -1,0 +1,17 @@
+BasedOnStyle: LLVM
+
+IndentWidth: 4
+ContinuationIndentWidth: 4
+TabWidth: 4
+UseTab: Never
+
+ColumnLimit: 0
+
+NamespaceIndentation: All
+FixNamespaceComments: false
+AllowShortIfStatementsOnASingleLine: WithoutElse
+
+AccessModifierOffset: -4
+
+QualifierAlignment: Left
+PointerAlignment: Left
