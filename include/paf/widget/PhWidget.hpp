@@ -49,8 +49,10 @@ namespace paf {
             Style_Widget_Rot = 24,         // rotation, untested, every 90 degrees (0,1,2,3)
             Style_Text_FontSize = 28,      // float
             Style_Text_LetterSpacing = 29, // float
-            Style_text_LineSpacing = 33,   // float
-            Style_Text_Align = 37          // take a look at `enum TextAlign`
+            Style_Text_LineSpacing = 33,   // float
+            Style_Text_Align = 37,         // take a look at `enum TextAlign`
+            Style_Text_ColorUp = 38,       // vec4 RGBA, upper part of color text for gradient
+            Style_Text_ColorDown = 39,     // vec4 RGBA, lower part of color text for gradient
         };
 
         int GetString(const paf::wstring&, int) const;
