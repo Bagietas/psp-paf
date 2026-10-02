@@ -116,10 +116,13 @@ DEFINE_HOOK(void, sub_20654, vsh_ctx* ctx) {
     debugInfoText->SetSize(0.0f, 0.0f, 0.0f);
     debugInfoText->SetStyle(paf::PhWidget::Style_Text_Align, paf::PhWidget::TextAlign_Right);
     debugInfoText->SetStyle(paf::PhWidget::Style_Widget_Pos, paf::PhWidget::WidgetPos_Right);
-    debugInfoText->SetStyle(paf::PhWidget::Style_text_LineSpacing, 1.5f);
+    debugInfoText->SetStyle(paf::PhWidget::Style_Text_LineSpacing, 1.5f);
     debugInfoText->SetStyle(paf::PhWidget::Style_Text_FontSize, 7.605f);
     debugInfoText->SetStyle(paf::PhWidget::Style_Widget_Size, paf::PhWidget::WidgetSize_TextureSize);
-    debugInfoText->SetPos_ontimer({240, 0, 0, 0}, nullptr);
+
+    // hardcoded pos, which I don't like but I guess Sony's guys never had a usecase for like text alignment 
+    // for text go up so hardcoding it to be in right lower corner
+    debugInfoText->SetPos_ontimer({240, -116, 0, 0}, nullptr);
 
     paf::PhText* text_2 = new paf::PhText(ctx->m_vsh_view->FindWidget("Q"), nullptr);
     text_2->SetSize(0.0f, 0.0f, 0.0f);
@@ -127,16 +130,16 @@ DEFINE_HOOK(void, sub_20654, vsh_ctx* ctx) {
     // reading the PhAppear and PhSText (guessed name), is just hell but fiugred out that you can set the gradient
     // color on text, couldn't figure out if there's just one type to set the color lol
     text_2->SetStyle(paf::PhWidget::Style_Text_ColorUp, {1.0f, 0.0f, 0.0f, 1.0f});
-    text_2->SetStyle(paf::PhWidget::Style_Text_ColorDown, {1.0f, 0.0f, 0.0f, 1.0f});
+    text_2->SetStyle(paf::PhWidget::Style_Text_ColorDown, {0.0f, 0.0f, 1.0f, 1.0f});
 
     text_2->SetStyle(paf::PhWidget::Style_Text_Align, paf::PhWidget::TextAlign_Left);
     text_2->SetStyle(paf::PhWidget::Style_Widget_Pos, paf::PhWidget::WidgetPos_Left);
-    text_2->SetStyle(paf::PhWidget::Style_text_LineSpacing, 2.5f);
+    text_2->SetStyle(paf::PhWidget::Style_Text_LineSpacing, 2.5f);
     text_2->SetStyle(paf::PhWidget::Style_Text_LetterSpacing, 2.5f);
-    text_2->SetStyle(paf::PhWidget::Style_Text_FontSize, 7.605f);
+    text_2->SetStyle(paf::PhWidget::Style_Text_FontSize, 12.f);
     text_2->SetStyle(paf::PhWidget::Style_Widget_Size, paf::PhWidget::WidgetSize_TextureSize);
     text_2->SetPos_ontimer({-240, -30, 0, 0}, nullptr);
-    text_2->SetText(u"that's a coool text\npadded to left, with red color\nand crazy spacings", 0);
+    text_2->SetText(u"that's a coool text\npadded to left\nwith red/blue color\nand crazy spacings\nand crazy gradient", 0);
 }
 
 static int (*g_previous)(SceModule*) = nullptr;

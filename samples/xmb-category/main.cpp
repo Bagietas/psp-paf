@@ -210,7 +210,7 @@ DEFINE_HOOK(void, sub_20654, vsh_ctx* ctx) {
     debugInfoText->SetSize(0.0f, 0.0f, 0.0f);
     debugInfoText->SetStyle(paf::PhWidget::Style_Text_Align, paf::PhWidget::TextAlign_Right);
     debugInfoText->SetStyle(paf::PhWidget::Style_Widget_Pos, paf::PhWidget::WidgetPos_Right);
-    debugInfoText->SetStyle(paf::PhWidget::Style_text_LineSpacing, 1.5f);
+    debugInfoText->SetStyle(paf::PhWidget::Style_Text_LineSpacing, 1.5f);
     debugInfoText->SetStyle(paf::PhWidget::Style_Text_FontSize, 7.605f);
     debugInfoText->SetStyle(paf::PhWidget::Style_Widget_Size, paf::PhWidget::WidgetSize_TextureSize);
     debugInfoText->SetPos_ontimer({240, 0, 0, 0}, nullptr);
